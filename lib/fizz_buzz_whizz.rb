@@ -25,16 +25,13 @@ class FizzBuzzWhizz
   end
 
   def rule_four(n)
-    if n % (@fizz * @buzz) == 0
-      return 'FizzBuzz'
-    end
-
-    if n % (@fizz * @whizz) == 0
-      return 'FizzWhizz'
-    end
-
-    if n % (@buzz * @whizz) == 0
-      return 'BuzzWhizz'
+    case
+    when n % (@fizz * @buzz) == 0
+      'FizzBuzz'
+    when n % (@fizz * @whizz) == 0
+      'FizzWhizz'
+    when n % (@buzz * @whizz) == 0
+      'BuzzWhizz'
     end
   end
 
