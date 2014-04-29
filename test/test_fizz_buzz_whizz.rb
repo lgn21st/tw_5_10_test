@@ -16,6 +16,7 @@ describe FizzBuzzWhizz do
 
   describe "apply rule #5" do
     it { fbw.result(13).must_equal 'Fizz' }
+    it { fbw.result(35).must_equal 'Fizz' }
   end
 
 end

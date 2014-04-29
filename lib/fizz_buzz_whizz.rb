@@ -8,7 +8,11 @@ class FizzBuzzWhizz
   end
 
   def result(n)
-    'Fizz'
+    n = n.to_s
+
+    if n[@fizz.to_s]
+      'Fizz'
+    end
   end
 
 end
