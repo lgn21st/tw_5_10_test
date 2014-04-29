@@ -8,9 +8,7 @@ class FizzBuzzWhizz
   end
 
   def result(n)
-    result = rule_five(n)
-    return result if result
-    rule_three(n)
+    rule_five(n) || rule_three(n) || n
   end
 
   private

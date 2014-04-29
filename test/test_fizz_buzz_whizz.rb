@@ -14,6 +14,13 @@ describe FizzBuzzWhizz do
     it { fbw.whizz.must_equal 7 }
   end
 
+  describe "doesn't apply any rule" do
+    it { fbw.result(1).must_equal 1 }
+    it { fbw.result(2).must_equal 2 }
+    it { fbw.result(4).must_equal 4 }
+    it { fbw.result(8).must_equal 8 }
+  end
+
   describe "apply rule #5" do
     it { fbw.result(13).must_equal 'Fizz' }
     it { fbw.result(35).must_equal 'Fizz' }
