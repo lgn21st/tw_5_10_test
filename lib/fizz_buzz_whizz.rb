@@ -8,6 +8,10 @@ class FizzBuzzWhizz
   end
 
   def result(n)
+    if n % (@fizz * @buzz) == 0
+      return 'FizzBuzz'
+    end
+
     rule_five(n) || rule_three(n) || n
   end
 

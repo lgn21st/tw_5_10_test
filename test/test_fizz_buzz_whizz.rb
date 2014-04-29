@@ -38,4 +38,8 @@ describe FizzBuzzWhizz do
     it { fbw.result(14).must_equal 'Whizz' }
   end
 
+  describe "apply rule #4" do
+    it { fbw.result(15).must_equal 'FizzBuzz' }
+  end
+
 end
