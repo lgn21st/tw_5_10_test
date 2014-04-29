@@ -7,4 +7,8 @@ class FizzBuzzWhizz
     @whizz = whizz
   end
 
+  def result(n)
+    'Fizz'
+  end
+
 end

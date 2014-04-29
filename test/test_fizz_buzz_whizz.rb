@@ -9,11 +9,13 @@ describe FizzBuzzWhizz do
   it { fbw.must_be_instance_of FizzBuzzWhizz }
 
   describe "init with default factor number" do
-    let(:fbw) { FizzBuzzWhizz.new }
-
     it { fbw.fizz.must_equal 3 }
     it { fbw.buzz.must_equal 5 }
     it { fbw.whizz.must_equal 7 }
+  end
+
+  describe "apply rule #5" do
+    it { fbw.result(13).must_equal 'Fizz' }
   end
 
 end
