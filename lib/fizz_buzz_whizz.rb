@@ -8,8 +8,22 @@ class FizzBuzzWhizz
   end
 
   def result(n)
-    n = n.to_s
+    result = rule_five(n.to_s)
+    return result if result
 
+    case
+    when n % @fizz == 0
+      'Fizz'
+    when n % @buzz == 0
+      'Buzz'
+    when n % @whizz == 0
+      'Whizz'
+    end
+  end
+
+  private
+
+  def rule_five(n)
     if n[@fizz.to_s]
       'Fizz'
     end

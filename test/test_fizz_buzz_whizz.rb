@@ -19,4 +19,16 @@ describe FizzBuzzWhizz do
     it { fbw.result(35).must_equal 'Fizz' }
   end
 
+  describe "apply rule #3" do
+    it { fbw.result(3).must_equal 'Fizz' }
+    it { fbw.result(6).must_equal 'Fizz' }
+    it { fbw.result(9).must_equal 'Fizz' }
+
+    it { fbw.result(5).must_equal 'Buzz' }
+    it { fbw.result(10).must_equal 'Buzz' }
+
+    it { fbw.result(7).must_equal 'Whizz' }
+    it { fbw.result(14).must_equal 'Whizz' }
+  end
+
 end
