@@ -28,6 +28,14 @@ class FizzBuzzWhizz
     if n % (@fizz * @buzz) == 0
       return 'FizzBuzz'
     end
+
+    if n % (@fizz * @whizz) == 0
+      return 'FizzWhizz'
+    end
+
+    if n % (@buzz * @whizz) == 0
+      return 'BuzzWhizz'
+    end
   end
 
   def rule_five(n)
